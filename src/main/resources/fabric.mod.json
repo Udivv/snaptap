@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "too_many_shortcuts",
+  "version": "${version}",
+  "name": "SnapTap",
+  "description": "Multiple binds per key action, with an optional \"+\" button. Modified fork of Too Many Shortcuts by KingTux (Apache-2.0).",
+  "authors": [
+    "KingTux",
+    "Siphalor"
+  ],
+  "provides": [
+    "amecsapi"
+  ],
+  "contributors": [],
+  "contact": {
+    "issues": "${source_url}/issues",
+    "sources": "${source_url}"
+  },
+  "license": "Apache-2.0",
+  "icon": "assets/too_many_shortcuts/logo.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "dev.kingtux.tms.TooManyShortcuts"
+      }
+    ],
+    "server": [],
+    "modmenu": [
+      "dev.kingtux.tms.modmenu.SnapTapModMenu"
+    ]
+  },
+  "mixins": [
+    "too_many_shortcuts.json"
+  ],
+  "accessWidener": "too_many_shortcuts.accesswidener",
+  "depends": {
+    "fabricloader": "${fabric_loader_range}",
+    "minecraft": "${minecraft_range}",
+    "fabric": "*",
+    "fabric-language-kotlin": ">=${fabric_kotlin_version}",
+    "tms_core": "*",
+    "tms_gui": "*",
+    "tms_shortcuts": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "${discord_url}"
+      }
+    },
+    "modmenu:clientsideOnly": true
+  }
+}
