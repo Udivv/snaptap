@@ -2,14 +2,13 @@
   "schemaVersion": 1,
   "id": "tms_core",
   "version": "${version}",
-  "name": "Too Many Shortcuts Core",
-  "description": "Too Many Shortcuts Core Library",
+  "name": "SnapTap Core",
+  "description": "SnapTap core library",
   "authors": [
     "KingTux"
   ],
   "contributors": [],
   "contact": {
-    "issues": "${source_url}/issues",
     "sources": "${source_url}"
   },
   "accessWidener": "tms_core.accesswidener",
@@ -24,9 +23,6 @@
     "modmenu:clientsideOnly": true,
     "modmenu": {
       "parent": "too_many_shortcuts",
-      "links": {
-        "modmenu.discord": "${discord_url}"
-      },
       "badges": [
         "library"
       ]

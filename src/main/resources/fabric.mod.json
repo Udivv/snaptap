@@ -3,7 +3,7 @@
   "id": "too_many_shortcuts",
   "version": "${version}",
   "name": "SnapTap",
-  "description": "Multiple binds per key action, with an optional \"+\" button. Modified fork of Too Many Shortcuts by KingTux (Apache-2.0).",
+  "description": "Bind more than one key to the same action. The + button only appears when you hover a row, or always or never if you prefer, in SnapTap settings.",
   "authors": [
     "KingTux",
     "Siphalor"
@@ -13,7 +13,6 @@
   ],
   "contributors": [],
   "contact": {
-    "issues": "${source_url}/issues",
     "sources": "${source_url}"
   },
   "license": "Apache-2.0",
@@ -46,11 +45,7 @@
     "tms_shortcuts": "*"
   },
   "custom": {
-    "modmenu": {
-      "links": {
-        "modmenu.discord": "${discord_url}"
-      }
-    },
+    "modmenu": {},
     "modmenu:clientsideOnly": true
   }
 }

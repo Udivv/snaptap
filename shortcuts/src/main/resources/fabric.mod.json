@@ -2,14 +2,13 @@
   "schemaVersion": 1,
   "id": "${module_id}",
   "version": "${version}",
-  "name": "${module_id}",
-  "description": "UI Changes to Too Many Shortcuts",
+  "name": "SnapTap Shortcuts",
+  "description": "SnapTap extra keybinds",
   "authors": [
     "KingTux"
   ],
   "contributors": [],
   "contact": {
-    "issues": "${source_url}/issues",
     "sources": "${source_url}"
   },
   "<% if (project.hasProperty('main')) { %>entrypoints": {
@@ -37,7 +36,10 @@
   "<% } %>custom": {
     "modmenu:clientsideOnly": true,
     "modmenu": {
-      "parent": "too_many_shortcuts"
+      "parent": "too_many_shortcuts",
+      "badges": [
+        "library"
+      ]
     }
   }
 }

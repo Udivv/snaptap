@@ -1,4 +1,4 @@
-rootProject.name = "too-many-shortcuts"
+rootProject.name = "snaptap"
 
 
 
